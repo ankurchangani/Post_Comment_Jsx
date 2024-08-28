@@ -39,7 +39,9 @@ const Post = () => {
 
   return (
     <>
-      <div className="flex items-center mb-4">
+    <div className="">
+    
+      <div className="flex items-center mb-4 ">
         <img className="w-12 h-12 rounded-full" src={User} alt="User Avatar" />
         <div className="ml-4">
           <h3 className="text-lg font-semibold text-gray-900">Ankur Changani</h3>
@@ -55,7 +57,6 @@ const Post = () => {
       </div>
 
       <hr className="border-t border-gray-200 my-4" />
-
       <Form
         username={postData.username}
         comment={postData.comment}
@@ -63,17 +64,19 @@ const Post = () => {
         handleComment={handleComment}
         handleSubmit={handleSubmit}
       />
+    </div>
+
 
       <div>
         {comments.length > 0 ? (
           comments.map((c, index) => (
-            <div key={index} className="mb-4 p-4 border border-gray-200 rounded-lg">
+            <div key={index} className="mt-5 p-4 border border-gray-200 rounded-lg">
               <h5 className="text-sm font-semibold text-gray-800">{c.username} - {c.rating} ⭐</h5>
               <p className="text-gray-700">{c.comment}</p>
             </div>
           ))
         ) : (
-          <p>No Submit</p>
+          <p></p>
         )}
       </div>
     </>
