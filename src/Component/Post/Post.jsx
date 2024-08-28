@@ -43,12 +43,12 @@ const Post = () => {
                 </div>
             </div>
 
-            <div className="mb-6">
-                <img className="w-full h-64 object-cover rounded-lg" src={Img} alt="Post Image" />
+            <div className="mb-6 flex justify-center items-center">
+                <img className=" object-cover rounded-lg" src={Img} alt="Post Image"  width={350}/>
+            </div>
                 <p className="text-gray-700 leading-relaxed mt-4">
                     Instagram content are you looking to create? Are you thinking about photos, videos, stories, captions, or something else? Let me know the theme or topic, and I can help you craft some great content!
                 </p>
-            </div>
 
             <hr className="border-t border-gray-300 my-4" />
 
