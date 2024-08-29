@@ -34,7 +34,8 @@ const Post = () => {
   
 
     return (
-        <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+        
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md ">
             <div className="flex items-center mb-6">
                 <img className="w-12 h-12 rounded-full" src={User} alt="User Avatar" />
                 <div className="ml-4">
